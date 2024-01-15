@@ -17,3 +17,13 @@ function updateCardContent() {
     document.getElementById('model-text').innerText = models[currentIndex];
     document.getElementById('definition-text').innerText = definitions[currentIndex];
 }
+
+function showDefinition() {
+    var definitionText = document.getElementById('definition-text');
+    definitionText.style.opacity = 1;
+}
+
+function hideDefinition() {
+    var definitionText = document.getElementById('definition-text');
+    definitionText.style.opacity = 0;
+}
