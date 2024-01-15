@@ -1,0 +1,34 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Add this step to remove the existing _site directory
+    - name: Clean previous build
+      run: rm -rf docs/_site
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build  # Adjust this based on your project setup
+
+    - name: Deploy
+      run: |
+        # Add your deployment commands here
+        # For example, you might use GitHub Pages deployment
+        npm run deploy
