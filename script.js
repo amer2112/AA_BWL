@@ -1,5 +1,6 @@
 var models = [- "Produktivität", "Wirtschaftlichkeit", "Rabatt", "Entscheidung unter Sicherheit",
-              "Entscheidung unter Ungewissheit", "Herzberg", "Rückkopplungsmodell", "Stakeholder", 
+              "Entscheidung unter Ungewissheit", 
+              "Herzberg", "Rückkopplungsmodell", "Stakeholder", 
               "Shareholder","Makroökonomie", "Porter's five fources, Branchenstrukturanalyse", 
               "Wettbwerbsstrategien", "Kapitalfreisetzung", "Marktanteil", "BCG-Matrix", "Synergie",
               "Acquisition", "SWOT-Analyse", "Produkt-Markt-Matrix", "Wichtige Berechnungen",
