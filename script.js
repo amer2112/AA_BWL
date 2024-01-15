@@ -5,26 +5,26 @@ var isCardFlipped = false;
 
 function toggleCardFlip() {
     if (!isCardFlipped) {
-        flipCard();
+        showDefinition();
     } else {
         hideDefinition();
-        isCardFlipped = false;
     }
+    isCardFlipped = !isCardFlipped;
 }
 
-function flipCard() {
+function showDefinition() {
     var cardInner = document.querySelector('.card-inner');
     cardInner.style.transform = 'rotateY(180deg)';
+    document.getElementById('model-text').innerText = definitions[currentIndex];
+}
 
-    setTimeout(function () {
-        updateCardContent();
-        cardInner.style.transform = 'rotateY(0deg)';
-        isCardFlipped = true;
-    }, 500);
+function hideDefinition() {
+    var cardInner = document.querySelector('.card-inner');
+    cardInner.style.transform = 'rotateY(0deg)';
+    document.getElementById('model-text').innerText = models[currentIndex];
 }
 
 function updateCardContent() {
-    document.getElementById('model-text').innerText = models[currentIndex];
     document.getElementById('definition-text').innerText = definitions[currentIndex];
 }
 
