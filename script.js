@@ -1,4 +1,15 @@
-var models = [- "Produktivität", "Wirtschaftlichkeit", "Rabatt", "Entscheidung unter Sicherheit", "Entscheidung unter Ungewissheit", "Herzberg", "Rückkopplungsmodell", "Stakeholder", "Shareholder","Makroökonomie", "Porter's five fources, Branchenstrukturanalyse", "Wettbwerbsstrategien", "Kapitalfreisetzung", "Marktanteil", "BCG-Matrix", "Synergie", "Acquisition", "SWOT-Analyse", "Produkt-Markt-Matrix", "Wichtige Berechnungen", "Diversifikationen (bsp: Sportschuhe verkaufen)", "Gallener Modell", "Funktionale Organisationsform", "Geschäftsorganisation", "Strategische Allianzen ", "Joint ventures", "Fusion", "Koordination ", "Transaktionstheorie", "Marketingmanagement", "Ziele des Marketings", "Ziele des Marketings", "Strategische Marketingsmanagment", "Sinus-Millieus","Leistungsprogramm ","Positionsstrategien","Neu positionieren (repositionierung)","Operative Marketingmanagement", "Leistung", "Marketingstrategien", "Preisfestlegung", "Break-even-analysis", "Kommunikation beim Marketing", "Werbung", "AIDA-Modell (Werbewirkung)", "Public relations", "Product placement", "Distributionspolitik", "Degitale Handelsplattformen"];
+var models = [- "Produktivität", "Wirtschaftlichkeit", "Rabatt", "Entscheidung unter Sicherheit",
+              "Entscheidung unter Ungewissheit", "Herzberg", "Rückkopplungsmodell", "Stakeholder", 
+              "Shareholder","Makroökonomie", "Porter's five fources, Branchenstrukturanalyse", 
+              "Wettbwerbsstrategien", "Kapitalfreisetzung", "Marktanteil", "BCG-Matrix", "Synergie",
+              "Acquisition", "SWOT-Analyse", "Produkt-Markt-Matrix", "Wichtige Berechnungen",
+              "Diversifikationen (bsp: Sportschuhe verkaufen)", "Gallener Modell", "Funktionale Organisationsform",
+              "Geschäftsorganisation", "Strategische Allianzen ", "Joint ventures", "Fusion", "Koordination ", "Transaktionstheorie", 
+              "Marketingmanagement", "Ziele des Marketings", "Ziele des Marketings", "Strategische Marketingsmanagment",
+              "Sinus-Millieus","Leistungsprogramm ","Positionsstrategien","Neu positionieren (repositionierung)","Operative Marketingmanagement",
+              "Leistung", "Marketingstrategien", "Preisfestlegung", "Break-even-analysis", "Kommunikation beim Marketing", "Werbung", 
+              "AIDA-Modell (Werbewirkung)", "Public relations", "Product placement", 
+              "Distributionspolitik", "Degitale Handelsplattformen"];
 var definitions = [
     "= Stück pro Tag/Stundem am Tag",
     "= Stückpreis/Arbeitskosten am Tag; WK pro Kunde = Wirtschaftlichkeit/(Materialkosten+ Mitarbeiterkosten)",
