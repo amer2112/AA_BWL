@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Card Flip Example</title>
+    <title>Model-Definition Cards</title>
+    <style>
+        .card {
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .front {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .back {
+            background-color: #e74c3c;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 <body>
 
-<div id="card-container" class="card" onmouseover="showDefinition()" onmouseout="hideDefinition()" onclick="toggleCardFlip()">
+<div class="card" onclick="toggleCardFlip()">
     <div class="card-inner">
-        <div class="card-front">
-            <p id="model-text">model1</p>
+        <div class="face front">
+            <p id="model-text">Click to flip</p>
         </div>
-        <div class="card-back">
-            <p id="definition-text">def. model1</p>
+        <div class="face back">
+            <p id="definition-text"></p>
         </div>
     </div>
 </div>
 
-<script src="script.js"></script>
+<script>
+  // Your JavaScript code here
+</script>
+
 </body>
 </html>
