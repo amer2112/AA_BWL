@@ -1,2 +1,2 @@
-# AA_PT
+# AA_BWL
 BWL_Klausurvorbereitung
